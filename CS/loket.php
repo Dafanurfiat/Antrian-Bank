@@ -109,18 +109,18 @@ if (!file_exists($barcodeImagePath)) {
             <!-- Loket Card -->
             <div class="card loket-card">
                 <div class="card-content" style="padding-bottom: 350px;">
-                    <h5 class="center" style="margin-top: 1px;">Status Loket Teler</h5>
+                    <h5 class="center" style="margin-top: 1px;">STATUS LOKET CUSTOMER SERVICE</h5>
                     <div class="center">
                         <div class="col s12 loket-a card-panel z-depth-2">
-                            <h5 class="header">Loket Teler A</h5>
+                            <h5 class="header">LOKET CS A</h5>
                             <h5 class="header light"><?= $A ?></h5>
                         </div>
                         <div class="col s12 loket-b card-panel z-depth-2" style="margin-top: 10px;">
-                            <h5 class="header">Loket Teler B</h5>
+                            <h5 class="header">LOKET CS B</h5>
                             <h5 class="header light"><?= $B ?></h5>
                         </div>
                         <div class="col s12 loket-c card-panel z-depth-2" style="margin-top: 10px;">
-                            <h5 class="header">Loket Teler C</h5>
+                            <h5 class="header">LOKET CS C</h5>
                             <h5 class="header light"><?= $C ?></h5>
                         </div>
                     </div>

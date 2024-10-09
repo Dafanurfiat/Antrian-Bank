@@ -120,20 +120,22 @@ if (isset($_POST['reset'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include '_headtags.php' ?>
-    <script src="js/jquery.js"></script> 
+    <script src="js/jquery.js"></script>
     <script>
-        var refreshId = setInterval(function(){
-            $('#tampilAntrian').load('tampilAntrian.php');
-        }, 1000);
+    var refreshId = setInterval(function() {
+        $('#tampilAntrian').load('tampilAntrian.php');
+    }, 1000);
     </script>
     <title>Program Antrian</title>
 
 </head>
+
 <body>
 
     <!-- header -->
@@ -143,58 +145,76 @@ if (isset($_POST['reset'])) {
     <!-- body -->
     <div class="row">
 
-        <div class="col s5 offset-s1 card">
+        <div class="col s12 m10 offset-m1 card">
+            <!-- Card Induk -->
             <div class="card-content">
-            
-                <!-- tampilan antrian -->
+                <h3 class="header center">Loket Customer Service</h3> <!-- Judul Utama untuk Loket Teller -->
+                <div class="row">
+                    <div class="col s12 m6">
+                        <h4 class="header center">Loket Customer Service A</h4>
+                        <form action="" method="post">
+                            <div class="center">
+                                <button class="btn-large blue darken-2" type="submit"
+                                    name="panggilAntrianA">Panggil</button>
+                                <button class="btn-large red darken-2" type="submit" name="selesaiA">Selesai</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <h4 class="header center">Loket Customer Service B</h4>
+                        <form action="" method="post">
+                            <div class="center">
+                                <button class="btn-large blue darken-2" type="submit"
+                                    name="panggilAntrianB">Panggil</button>
+                                <button class="btn-large red darken-2" type="submit" name="selesaiB">Selesai</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <h4 class="header center">Loket Customer Service C</h4>
+                        <form action="" method="post">
+                            <div class="center">
+                                <button class="btn-large blue darken-2" type="submit"
+                                    name="panggilAntrianC">Panggil</button>
+                                <button class="btn-large red darken-2" type="submit" name="selesaiC">Selesai</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col s12 m6">
+                        <h4 class="header center">Reset Nomor Antrian</h4>
+                        <form action="" method="post" id="resetForm">
+                            <div class="center">
+                                <button class="btn-large red darken-2" type="submit" name="reset">Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tampilan Antrian -->
+        <div class="col s12 m10 offset-m1 card">
+            <div class="card-content">
+                <h3 class="header center">Tampilan Antrian</h3>
                 <div id="tampilAntrian"></div>
-                <!-- end tampilan antrian -->
-
             </div>
-            <br><br>
         </div>
 
-        <div class="col s4 offset-s1 card">
-            <h3 class="header center">Loket A</h3>
-            <div class="card-content">
-                <form action="" method="post">
-                    <div class="center"><button class="btn-large blue darken-2" type="submit" name="panggilAntrianA">Panggil</button> <button class="btn-large red darken-2" type="submit" name="selesaiA">Selesai</button></div>
-                </form>
+        <!-- Logout Button -->
+        <div class="col s12 m10 offset-m1">
+            <div class="center">
+                <a href="logout.php" title="Logout" class="btn-large red darken-2">Logout</a>
             </div>
-
-            <h3 class="header center">Loket B</h3>
-            <div class="card-content">
-                <form action="" method="post">
-                    <div class="center"><button class="btn-large blue darken-2" type="submit" name="panggilAntrianB">Panggil</button> <button class="btn-large red darken-2" type="submit" name="selesaiB">Selesai</button></div>
-                </form>
-            </div>
-
-            <h3 class="header center">Loket C</h3>
-            <div class="card-content">
-                <form action="" method="post">
-                    <div class="center"><button class="btn-large blue darken-2" type="submit" name="panggilAntrianC">Panggil</button> <button class="btn-large red darken-2" type="submit" name="selesaiC">Selesai</button></div>
-                </form>
-            </div>
-
-            <h3 class="header center">Reset Nomor Antrian</h3>
-<div class="card-content">
-    <form action="" method="post" id="resetForm">
-        <div class="center">
-        <button class="btn-large red darken-2" type="submit" name="reset" >Reset</button>
-
         </div>
-    </form>
-</div>
-            
-        </div>
-
-        
-
     </div>
 
 
 
 </body>
+
 </html>
 
 <?php

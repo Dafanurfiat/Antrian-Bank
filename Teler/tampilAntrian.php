@@ -32,21 +32,21 @@ if (mysqli_num_rows($C) < 1){
 
 <div class="center">
     <div class="col s4">
-        <h5 class="header">Loket A</h5>
+        <h5 class="header">Loket Teller A</h5>
         <h5 class="header light"><?= $A ?></h5>
     </div>
     <div class="col s4">
-        <h5 class="header">Loket B</h5>
+        <h5 class="header">Loket Teller B</h5>
         <h5 class="header light"><?= $B ?></h5>
     </div>
     <div class="col s4">
-        <h5 class="header">Loket C</h5>
+        <h5 class="header">Loket Teller C</h5>
         <h5 class="header light"><?= $C ?></h5>
     </div>
 </div>
 
 
-<h5 class="header center">Daftar Antrian</h3>
+<h5 class="header center" style="padding-top:12%">Daftar Antrian</h3>
 <div class="center">
     <?php foreach ($antrian as $data) : ?>
     <div class="col s4"><h5 class="light center"><?= $data["nomor"]; ?></h5></div>
