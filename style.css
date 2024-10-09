@@ -1,0 +1,87 @@
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    line-height: 1.6;
+    height: 70vh;
+    color: #333;
+}
+
+section {
+    padding:120;
+}
+
+nav .brand-logo img {
+    vertical-align: middle; /* Menyelaraskan logo secara vertikal */
+    padding-top: 60px;
+}
+
+nav .nav-wrapper {
+    display: flex; /* Menggunakan flexbox untuk mengatur elemen dalam navigasi */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    justify-content: space-between; /* Menjaga elemen di kanan dan kiri */
+    padding-left: 15%;
+}
+
+nav ul li a {
+    color: white; /* Warna putih untuk ikon dan teks */
+}
+
+nav ul li a i.material-icons {
+    font-size: 24px; /* Ukuran ikon profil */
+    line-height: 100%; /* Tinggi agar sejajar dengan navbar */
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2%;
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: #FFF0D1; /* Light background */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+    display: block;
+}
+
+a:hover, a.active {
+    text-decoration: underline;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px 0;
+    color: #333;
+    font-weight: bold; 
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+
+.btn:hover {
+    background-color: #835c3d;
+}
