@@ -59,33 +59,36 @@ $nomorAntrian = mysqli_fetch_assoc($antrian);
             $('#notasiAntrian').load('notasiAntrian.php');
         }, 1000);
     </script>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 <body>
 
     <!-- header -->
-    <nav class="blue darken-2" style="margin-bottom: 70px">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="antrian.php" title="Halaman Awal" class="brand-logo"><i class="material-icons">touch_app</i>BNI</a>
-                <ul class="right hide-on-med-and-down"></ul>
-            </div>
-        </div>
-    </nav>
+    <?php include '_navbar.php'; ?>
     <!-- end header -->
 
     <!-- body -->
-    <div class="col s4 offset-s1 card" style="margin-left: 30px; margin-right: 30px">
-        <h3 class="header center" style="padding-top: 20px">Loket Customer Service</h3>
+    <div class="row justify-content-center" style="margin:2%;">
+    <div class="col-12 col-md-6 col-lg-6 card px-3 py-4 card">
+        <h3 class="header center">LOKET CUSTOMER SERVICE</h3>
         <div class="card-content">
             <form action="" method="post">
                 <div class="center">
-                    <button class="btn-large blue darken-2" type="submit" name="antriBaru">Ambil Antrian</button>
+                    <button class="btn-large orange darken-2" style="margin-bottom:20px;" type="submit" name="antriBaru">Ambil Antrian</button>
                 </div>
             </form>
-            <h3 class="header center">Info</h3>
+            <h3 class="header center">INFO</h3>
             <div id="notasiAntrian"></div>
         </div>
     </div>
+</div>
     <!-- end body -->
 </body>
 </html>

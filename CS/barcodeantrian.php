@@ -42,28 +42,52 @@ if (!file_exists($barcodeImagePath)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barcode Antrian</title>
     <?php include '_headtags.php'; ?>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script>
+        // Function to print the queue number
+        function printAntrian() {
+            window.print();
+        }
+    </script>
 </head>
 <body>
 
     <!-- header -->
-    <nav class="blue darken-2" style="margin-bottom: 70px">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="antrian.php" title="Halaman Awal" class="brand-logo"><i class="material-icons">touch_app</i>BNI</a>
-            </div>
-        </div>
-    </nav>
+    <?php include '_navbar.php'; ?>
     <!-- end header -->
 
     <!-- body -->
     <div class="container">
-        <h3 class="header center">Nomor Antrian: <?= htmlspecialchars($antrianData['nomor']); ?></h3>
-        <h4 class="header center">Nomor Antrian Sekarang: <?= htmlspecialchars($nomorAntrianSekarang); ?></h4>
-        <h4 class="header center">Status: <?= htmlspecialchars($antrianData['status']); ?></h4>
-        <h4 class="header center">Waktu Datang: <?= htmlspecialchars($antrianData['datang']); ?></h4>
-        <div class="center">
-            <!-- Tampilkan gambar barcode -->
-            <img src="<?= $barcodeImagePath ?>" alt="Barcode Antrian">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="center">
+                        <h2>Nomor Antrian Anda</h2>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="center"><?= htmlspecialchars($antrianData['nomor']); ?></h1><br></br>
+                        <p class="card-text">Nomor Antrian Sekarang: <?= htmlspecialchars($nomorAntrianSekarang); ?></p>
+                        <p class="card-text">Status: <?= htmlspecialchars($antrianData['status']); ?></p>
+                        <p class="center"><?= htmlspecialchars($antrianData['datang']); ?></p>
+                        <div class="barcode">
+                            <!-- Tampilkan gambar barcode -->
+                            <img  class="img-fluid d-block mx-auto" style="width:150px;" src="<?= $barcodeImagePath ?>" alt="Barcode Antrian">
+                        </div>
+                    </div>
+                    <div class="center">
+                        Terima kasih atas kesabaran Anda
+                    </div>
+                </div>
+                <!-- Add the print button -->
+                <div class="center" style="margin-top: 20px;">
+                    <button class="btn btn-primary" onclick="printAntrian()">Cetak Antrian</button>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end body -->

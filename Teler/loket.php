@@ -100,14 +100,7 @@ if (!file_exists($barcodeImagePath)) {
 <body>
 
     <!-- header -->
-    <nav class="blue darken-2" style="margin-bottom: 70px">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="antrian.php" title="Halaman Awal" class="brand-logo"><i class="material-icons">touch_app</i>BNI</a>
-                <ul class="right hide-on-med-and-down"></ul>
-            </div>
-        </div>
-    </nav>
+    <?php include '_navbar.php'; ?>
     <!-- end header -->
 
     <!-- Loket Cards in One Container -->
@@ -116,18 +109,18 @@ if (!file_exists($barcodeImagePath)) {
             <!-- Loket Card -->
             <div class="card loket-card">
                 <div class="card-content" style="padding-bottom: 350px;">
-                    <h5 class="center" style="margin-top: 1px;">Loket Status</h5>
+                    <h5 class="center" style="margin-top: 1px;">Status Loket Teler</h5>
                     <div class="center">
                         <div class="col s12 loket-a card-panel z-depth-2">
-                            <h5 class="header">Loket A</h5>
+                            <h5 class="header">Loket Teler A</h5>
                             <h5 class="header light"><?= $A ?></h5>
                         </div>
                         <div class="col s12 loket-b card-panel z-depth-2" style="margin-top: 10px;">
-                            <h5 class="header">Loket B</h5>
+                            <h5 class="header">Loket Teler B</h5>
                             <h5 class="header light"><?= $B ?></h5>
                         </div>
                         <div class="col s12 loket-c card-panel z-depth-2" style="margin-top: 10px;">
-                            <h5 class="header">Loket C</h5>
+                            <h5 class="header">Loket Teler C</h5>
                             <h5 class="header light"><?= $C ?></h5>
                         </div>
                     </div>

@@ -48,6 +48,12 @@ if (!file_exists($barcodeImagePath)) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script>
+        // Function to print the queue number
+        function printAntrian() {
+            window.print();
+        }
+    </script>
 </head>
 <body>
 
@@ -76,6 +82,10 @@ if (!file_exists($barcodeImagePath)) {
                     <div class="center">
                         Terima kasih atas kesabaran Anda
                     </div>
+                </div>
+                <!-- Add the print button -->
+                <div class="center" style="margin-top: 20px;">
+                    <button class="btn btn-primary" onclick="printAntrian()">Cetak Antrian</button>
                 </div>
             </div>
         </div>

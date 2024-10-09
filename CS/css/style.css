@@ -1,0 +1,32 @@
+nav .brand-logo img {
+    vertical-align: middle; /* Menyelaraskan logo secara vertikal */
+    padding-top: 60px;
+}
+
+nav .nav-wrapper {
+    display: flex; /* Menggunakan flexbox untuk mengatur elemen dalam navigasi */
+    align-items: center; /* Menyelaraskan item secara vertikal */
+    justify-content: space-between; /* Menjaga elemen di kanan dan kiri */
+    padding-left: 15%;
+}
+
+nav ul li a {
+    color: white; /* Warna putih untuk ikon dan teks */
+}
+
+nav ul li a i.material-icons {
+    font-size: 24px; /* Ukuran ikon profil */
+    line-height: 100%; /* Tinggi agar sejajar dengan navbar */
+}
+
+body {
+    font-family: "Montserrat";
+    color: #333;
+}
+
+.card {
+    border-radius: 20px;
+    background-color: #FFF0D1; /* Light background */
+    padding: 20px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
