@@ -19,7 +19,7 @@ if (isset($_POST["antriBaru"])) {
         $nomorAntrianBaru = mysqli_insert_id($connect);
 
         // URL to be encoded in the QR code
-        $url = "http://localhost/AntrianKu-master/Teler/loket.php?nomor=" . $nomorAntrianBaru;
+        $url = "https://antrian-qr.my.id/Teler/loket.php?nomor=" . $nomorAntrianBaru;
 
         // Generate QR code with the URL
         $qrCodeResult = Builder::create()

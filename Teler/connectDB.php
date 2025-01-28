@@ -1,9 +1,9 @@
 <?php
 
-$usernameDB = "root";
-$passwordDB = "";
+$usernameDB = "antria63_antrianku2";
+$passwordDB = "8aH9i$^)O?;y";
 $serverDB = "localhost";
-$DB = "antrianku2";
+$DB = "antria63_antrianku2";
 
 
 // konek lagi = IMPORTANT
