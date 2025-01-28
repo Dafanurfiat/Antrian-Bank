@@ -44,13 +44,13 @@
                                 <ul class="list-unstyled">
                                     <li style="padding-bottom: 20px;">
                                         <a class="btn btn-large orange darken-2 btn-block"
-                                            href="http://localhost/antrianku-master/Teler/antrian.php">
+                                            href="https://antrian-qr.my.id/Teler/antrian.php">
                                             <p>Antrian Teller</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a class="btn btn-large orange darken-2 btn-block"
-                                            href="http://localhost/antrianku-master/CS/antrian.php">
+                                            href="https://antrian-qr.my.id/CS/antrian.php">
                                             <p>Antrian Customer Service</p>
                                         </a>
                                     </li>

@@ -1,0 +1,18 @@
+body { 
+    font-family: "Montserrat";
+    color: #333;
+    background-color: #006699;
+}
+
+section {
+    padding:120;
+}
+
+nav {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    height: 100px; 
+    z-index: 999;
+}
