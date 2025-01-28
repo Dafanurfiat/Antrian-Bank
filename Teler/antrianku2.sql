@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 09, 2024 at 06:19 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Waktu pembuatan: 28 Jan 2025 pada 14.07
+-- Versi server: 10.4.32-MariaDB
+-- Versi PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `antrian`
+-- Struktur dari tabel `antrian`
 --
 
 CREATE TABLE `antrian` (
@@ -36,7 +36,7 @@ CREATE TABLE `antrian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `antrian`
+-- Dumping data untuk tabel `antrian`
 --
 
 INSERT INTO `antrian` (`nomor`, `status`, `loket`, `datang`, `dilayani`) VALUES
@@ -55,16 +55,19 @@ INSERT INTO `antrian` (`nomor`, `status`, `loket`, `datang`, `dilayani`) VALUES
 (13, 'selesai', 'C', '22:44:02', '17:09:51'),
 (14, 'selesai', 'A', '23:20:36', '17:20:53'),
 (15, 'selesai', 'A', '23:20:39', '17:21:46'),
-(16, 'dilayani', 'A', '23:20:41', '17:22:59'),
-(17, 'dilayani', 'B', '23:20:42', '17:24:16'),
+(16, 'selesai', 'A', '23:20:41', '17:22:59'),
+(17, 'selesai', 'B', '23:20:42', '17:24:16'),
 (18, 'selesai', 'C', '23:20:44', '17:24:20'),
-(19, 'dilayani', 'C', '23:20:46', '17:26:39'),
-(20, 'mengantri', '', '23:49:43', '00:00:00');
+(19, 'selesai', 'C', '23:20:46', '17:26:39'),
+(20, 'selesai', 'A', '23:49:43', '12:01:00'),
+(21, 'selesai', 'A', '18:54:42', '12:01:03'),
+(22, 'selesai', 'A', '18:58:25', '12:01:14'),
+(23, 'mengantri', '', '19:35:50', '00:00:00');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `karyawan`
+-- Struktur dari tabel `karyawan`
 --
 
 CREATE TABLE `karyawan` (
@@ -73,7 +76,7 @@ CREATE TABLE `karyawan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `karyawan`
+-- Dumping data untuk tabel `karyawan`
 --
 
 INSERT INTO `karyawan` (`username`, `password`) VALUES
@@ -84,26 +87,26 @@ INSERT INTO `karyawan` (`username`, `password`) VALUES
 --
 
 --
--- Indexes for table `antrian`
+-- Indeks untuk tabel `antrian`
 --
 ALTER TABLE `antrian`
   ADD PRIMARY KEY (`nomor`);
 
 --
--- Indexes for table `karyawan`
+-- Indeks untuk tabel `karyawan`
 --
 ALTER TABLE `karyawan`
   ADD PRIMARY KEY (`username`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `antrian`
+-- AUTO_INCREMENT untuk tabel `antrian`
 --
 ALTER TABLE `antrian`
-  MODIFY `nomor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `nomor` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
